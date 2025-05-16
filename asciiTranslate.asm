@@ -1,8 +1,8 @@
 ;Filename: asciiTranslate.asm
 ;Author: Sam Shedwick
 ;Date: 5/15/2025
-;Description:
-
+;Description: Takes 8 different bytes and one by one translates the left 4 and right 4 bits in the byte into their ASCII code versions to be able to print it out. 
+;It adds spaces in between each byte, and adds a new line at the end for formatting.
 SECTION .data
 inputBuf:
         db 0x83,0x6A,0x88,0xDE,0x9A,0xC3,0x54,0x9A ; The different bytes to be printed out
